@@ -16,7 +16,7 @@ def random_predict(number: int=1) -> int:
     
     while True:
         count+=1
-        predict_number = np.random.randint(1,500)
+        predict_number = np.random.randint(1,100)
         if number == predict_number:
             break
     return (count)    
@@ -38,7 +38,7 @@ def score_game(random_predict) -> int:
         count_lst.append(random_predict(number))
         
     score = int(np.mean(count_lst))  
-    print(f"Ваш флгоритм угадывает число в среднем за: {score} попыток!")  
+    print(f"Ваш aлгоритм угадывает число в среднем за: {score} попыток!")  
     return(score)    
 
 
